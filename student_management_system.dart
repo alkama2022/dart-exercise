@@ -499,7 +499,7 @@ String validateInput(String inputType) {
     // Validate RG number
     if (inputType.toLowerCase() == 'rg number') {
       bool validRgNumber = RegExp(
-        r'^CST/\d{2}/(IFT|COM|CBS|SWE)/\d{4}$',
+        r'^CST/\d{2}/(IFT|COM|CBS|SWE)/\d{5}$',
         caseSensitive: false,
       ).hasMatch(input);
 
